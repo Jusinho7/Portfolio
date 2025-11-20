@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #e9eef6;
+    color: #1e1e1e;
+    line-height: 1.6;
+    padding: 0 30px;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+section {
+  margin: 60px 0;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background: #e9eef6;
+    border-radius: 30px;
+    box-shadow: 
+        18px 18px 36px #c9cdd3,
+        -18px -18px 36px #ffffff;
+    transition: 0.3s ease;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 70px 0;
+    transition: 0.3s ease;
+}
+
+.intro:hover {
+    transform: translateY(-6px);
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e9eef6;
+    box-shadow:
+        10px 10px 20px #c9cdd3,
+        -10px -10px 20px #ffffff;
+    padding: 8px;
+}
+
+.intro-text {
+    max-width: 600px;
+    color: #333;
+    line-height: 1.7;
+    font-family: "Poppins", sans-serif;
+    padding: 15px 0;
+}
+
+.intro-text h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: #1c1d21;
+    text-shadow:
+        1px 1px 2px #fff,
+        -1px -1px 2px #ccc;
+}
+
+.intro-text p {
+    font-size: 1.15rem;
+    color: #555;
+    margin-top: 10px;
+    text-align: justify; 
+    text-indent: 25px;   
+    transition: color 0.3s ease;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.contact-content ul,
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+.skills li {
+    padding: 15px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background: #e9eef6;
+    color: #444;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow:
+        8px 8px 16px #c9cdd3,
+        -8px -8px 16px #ffffff;
+}
+
+.contact-content a:hover,
+.skills li:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        inset 6px 6px 14px #c9cdd3,
+        inset -6px -6px 14px #ffffff;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+    background: #e9eef6;
+    border-radius: 30px;
+    box-shadow: 
+        18px 18px 36px #c9cdd3,
+        -18px -18px 36px #ffffff;
+    transition: 0.3s ease;
+}
+
+.contact h2,
+.projects-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background: #e9eef6;
+}
+
+.contact-content {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+    
+}
+
+.contact a {
+  color: #4facfe;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.a-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    color: #222;
+    padding: 12px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 
+        18px 18px 36px #c9cdd3,
+        -18px -18px 36px #ffffff
+    ;
+}
+
+.a-content img {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.a-content span {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.a-content:hover img {
+    display: none;
+}
+
+.a-content:hover span {
+    display: inline;
+}
+
+.contact-content a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #444;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-content a:hover {
+    padding: 15px ;
+    transform: translateY(-4px);
+    box-shadow:
+        inset 6px 6px 14px #c9cdd3,
+        inset -6px -6px 14px #ffffff
+    ;  
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+

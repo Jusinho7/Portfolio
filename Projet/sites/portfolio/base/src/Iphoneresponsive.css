@@ -1,0 +1,96 @@
+@media (max-width: 480px) {
+
+  body {
+    padding: 0 15px;
+  }
+
+  .all,
+  .second {
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  .intro {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  .intro-text {
+    max-width: 100%;
+    padding: 10px 0;
+  }
+
+  .intro-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .intro-text p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+    text-indent: 0;
+    text-align: justify;
+  }
+
+  .skills h2 {
+    font-size: 1.2rem;
+  }
+
+  .skills ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .skills li {
+    font-size: 0.5rem;
+  }
+
+  .contact-content ul {
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .skills li,
+  .contact-content a {
+    width: 90%;
+    text-align: center;
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .a-content {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .a-content img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .a-content span {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    margin: 40px 0;
+  }
+}

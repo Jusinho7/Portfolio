@@ -1,0 +1,79 @@
+.project-card {
+    background: #e9eef6;  
+    margin-top: 60px; 
+    margin-left: 100px;   
+    margin-right: 100px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {  
+    color: #0e2244;
+    font-size: 1.8rem;
+    font-family: 'Segoe UI';
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: 1.15rem;
+    color: #555;
+    margin: 10px;
+    text-align: justify;
+    text-indent: 25px;   
+    transition: color 0.3s ease;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0e2244;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+    background-color: transparent;
+    color: #0e2244;
+    transform: translateY(-4px);
+    box-shadow:
+        inset 6px 6px 14px #c9cdd3,
+        inset -6px -6px 14px #ffffff;
+}
+
+
+@media (max-width: 480px) {
+
+  .project-card {
+    margin: 15px 7px; 
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem; 
+  }
+
+  .project-card p,
+  .text {
+    font-size: 0.8rem; 
+    text-indent: 15px;
+    margin: 8px 0;
+  }
+
+  .project-card a {
+    padding: 8px 15px;  
+    font-size: 0.95rem;
+  }
+
+  .project-card a:hover {
+    transform: translateY(-3px);
+  }
+}
+
