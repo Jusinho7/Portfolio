@@ -135,7 +135,7 @@ Dans ton dépôt GitHub :
 - Source : branche `gh-pages`, dossier `/ (root)`
 - Sauvegarde
 
-🎉 Ton site sera disponible sur `https://jusinho7.github.io/nom-du-repo` après quelques minutes.
+🎉 Ton site sera disponible sur `https://jusinho7.github.io/portfolio` après quelques minutes.
 
 ---
 
