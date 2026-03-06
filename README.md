@@ -116,7 +116,7 @@ Dans `vite.config.js` :
 
 ```js
 export default defineConfig({
-  base: '/nom-du-repo/',
+  base: '/potfolio/',
 })
 ```
 
