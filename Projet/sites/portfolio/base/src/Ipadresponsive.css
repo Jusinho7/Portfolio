@@ -7,7 +7,7 @@
   .all,
   .second {
     margin: 20px 10px;
-    padding: 25px;
+    padding: 32px;
   }
 
   .intro {
@@ -28,14 +28,14 @@
   }
 
   .intro-text h1 {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 
   .intro-text p {
     font-size: 1.05rem;
     line-height: 1.6;
-    text-indent: 20px;
-    text-align: justify;
+    text-indent: 0;
+    text-align: left;
   }
 
   .skills ul,

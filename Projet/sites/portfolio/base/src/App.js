@@ -1,11 +1,7 @@
 import React from "react";
 import "./App.css";
-import "./Iphoneresponsive.css";
-import "./Ipadresponsive.css";
 import github from "./github.png";
 import email from "./email.png";
-import insta from "./instagram.png";
-import fb from "./facebook.png";
 import wa from "./whatsapp.png";
 import profil from "./profil.jpg";
 import ProjectCard from "./ProjectCard";
@@ -16,9 +12,15 @@ function App() {
     {
       name: "Arenah",
       tech: "AJAX, HTML, CSS",
-      description: "L’objectif était de concevoir une interface moderne et intuitive permettant aux clients de découvrir le menu, visualiser les spécialités et naviguer facilement sur le site. Ce projet m’a permis de mettre en pratique mes compétences en JavaScript, HTML et CSS, tout en apprenant à créer un site responsive et interactif",
-      link: "https://690f4d5340182d31450917f7--joyful-macaron-ccff47.netlify.app/",
+      description: "L’objectif de ce projet était de concevoir un site web moderne et intuitif pour permettre aux clients de découvrir facilement le restaurant, son menu et ses différentes spécialités. L’interface a été pensée pour offrir une navigation fluide et agréable, tout en présentant les informations de manière claire et accessible. L’utilisation d’AJAX permet également de rendre certaines interactions plus dynamiques sans nécessiter le rechargement complet de la page. Ce projet m’a permis de renforcer mes compétences en HTML, CSS et JavaScript, tout en mettant en pratique la conception d’interfaces responsive et interactives adaptées aux différents supports.",
+      link: "https://690f4d5340182d31450917f7--joyful-macaron-ccff47.netlify.app/"
     },
+    {
+      name: "Karataka",
+      tech: "React",
+      description: "L’objectif de ce site est de présenter et de publier notre projet de jeu vidéo, développé dans le cadre de notre formation. Il permet de mettre en avant l’univers du jeu, son concept, ses fonctionnalités ainsi que les différents éléments qui composent le projet. Le site a été conçu comme une véritable vitrine du projet afin de permettre aux visiteurs de découvrir le jeu, de comprendre son fonctionnement et de suivre son évolution. À travers ce projet, nous avons également mis en pratique plusieurs compétences en développement web, notamment la conception d’une interface responsive, l’organisation du contenu, la création d’une expérience utilisateur cohérente et la mise en ligne du projet. Ce site représente ainsi à la fois une plateforme de présentation pour notre jeu vidéo et une démonstration de notre travail en équipe et de nos compétences techniques.",
+      link: "https://jusinho7.github.io/sparkup/"
+    }
   ];
 
   const contacts = [
@@ -29,22 +31,10 @@ function App() {
     hoverColor: "#4facfe", 
   },
   {
-    name: "Instagram",
-    url: "https://www.instagram.com/jose_rasul/",
-    icon: insta,
-    hoverColor: "#e1306c",
-  },
-  {
     name: "GitHub",
     url: "https://github.com/Jusinho7",
     icon: github,
     hoverColor: "#333", 
-  },
-  {
-    name: "Facebook",
-    url: "https://web.facebook.com/hose.rasoru",
-    icon: fb,
-    hoverColor: "#1877f2", 
   },
   {
     name: "WhatsApp",
@@ -56,55 +46,71 @@ function App() {
 
   return (
     <div className="App">
+      <header className="site-header">
+        <a className="brand" href="#accueil">SJ<span>.</span></a>
+        <nav aria-label="Navigation principale">
+          <a href="#projets">Projets</a>
+          <a href="#competences">Compétences</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-      <section className="all">
-        <section className="intro">
-          <img 
-            src={profil}
-            alt="Photo de moi" 
-            className="profile-photo"
-          />
-          <div className="intro-text">
-            <h1>Bonjour, je suis Sitraka José</h1>
-            <p>
-              Je suis un développeur web junior passionné par React et JavaScript. Je crée des sites web modernes, interactifs et responsives qui aident les clients à concrétiser leurs idées.
-            Toujours à l’affût des nouvelles technologies, j’aime concevoir des interfaces élégantes et performantes, avec une attention particulière au détail et à l’expérience utilisateur.
-            Disponible pour des projets freelance, je transforme vos idées en applications web fiables et stylées. 
+      <main>
+        <section className="hero" id="accueil">
+          <div className="hero-copy">
+            <p className="eyebrow"><span /> Développeur logiciel junior</p>
+            <h1>Des solutions simples pour des <em>problèmes concrets.</em></h1>
+            <p className="hero-description">
+              Je suis Sitraka José, développeur junior passionné par la programmation et la résolution de problèmes. Je travaille avec Python, C, JavaScript et React, en m’adaptant aux besoins de chaque projet.
             </p>
+            <div className="hero-actions">
+              <a className="primary-button" href="#projets">Découvrir mes projets <span>↗</span></a>
+              <a className="text-button" href="#contact">Parlons de votre idée</a>
+            </div>
+          </div>
+          <div className="hero-visual">
+            <div className="visual-orbit orbit-one" />
+            <div className="visual-orbit orbit-two" />
+            <img src={profil} alt="Sitraka José" className="profile-photo" />
+            <div className="availability"><span /> Disponible pour un projet</div>
           </div>
         </section>
 
-        <section className="skills">
-          <h2>Compétences Techniques</h2>
-          <ul>
-            <li>HTML / CSS / JavaScript</li>
-            <li>React / AJAX</li>
-            <li>Responsive Design</li>
+        <section className="quick-facts" aria-label="Informations rapides">
+          <div><strong>02</strong><span>projets présentés</span></div>
+          <div><strong>Python & C</strong><span>mes bases de programmation</span></div>
+          <div><strong>100%</strong><span>curiosité et implication</span></div>
+        </section>
+
+        <section className="content-section" id="competences">
+          <div className="section-heading">
+            <p className="eyebrow">Ce que je pratique</p>
+            <h2>Une approche polyvalente, une envie constante de progresser.</h2>
+          </div>
+          <ul className="skills-grid">
+            <li><span>01</span><strong>Développement</strong><p>Python, C, JavaScript et React selon les objectifs et les contraintes du projet.</p></li>
+            <li><span>02</span><strong>Python & C</strong><p>Une base solide en programmation, en logique et en résolution de problèmes.</p></li>
+            <li><span>03</span><strong>Algorithmique</strong><p>Je conçois des algorithmes structurés et efficaces pour résoudre des problèmes concrets.</p></li>
           </ul>
         </section>
-      </section>
 
-      <section className="second">
-        <section className="projects-section">
-          <h2>Mes Projets</h2>
+        <section className="content-section projects-section" id="projets">
+          <div className="section-heading projects-heading">
+            <div><p className="eyebrow">Sélection personnelle</p><h2>Quelques projets dont je suis fier.</h2></div>
+            <span className="project-count">01 — 02</span>
+          </div>
           <div className="projects">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
+            {projects.map((project, index) => <ProjectCard key={index} project={project} index={index} />)}
           </div>
         </section>
 
-        <section className="contact">
-          <h2>Contact</h2>
-          <div className="contact-content">
-            <ul>
-              {contacts.map((contact, index) => (
-                <ContactItem key={index} contact={contact} />
-              ))}
-            </ul>
-          </div>
+        <section className="contact-panel" id="contact">
+          <div><p className="eyebrow">Un projet en tête ?</p><h2>Construisons quelque chose de mémorable.</h2></div>
+          <div className="contact-content"><ul>{contacts.map((contact, index) => <ContactItem key={index} contact={contact} />)}</ul></div>
         </section>
-      </section>
+      </main>
+
+      <footer><span>© 2026 Sitraka José</span><span>Conçu avec React</span></footer>
     </div>
   );
 }
