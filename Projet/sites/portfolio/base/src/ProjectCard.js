@@ -1,19 +1,29 @@
 import React from "react";
 import "./ProjectCard.css";
-import "./Iphoneresponsive.css";
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, index }) {
+  const technologies = project.tech.split(",").map((technology) => technology.trim());
+
   return (
-    <div className="project-card">
-      <h3>{project.name}</h3>
-      <p><strong>Technologies :</strong> {project.tech}</p>
-      <p className="text">{project.description}</p>
+    <article className="project-card">
+      <div className="project-card-topline">
+        <span>Projet {String(index + 1).padStart(2, "0")}</span>
+        <span className="project-arrow">↗</span>
+      </div>
+      <div className="project-card-content">
+        <h3>{project.name}</h3>
+        <div className="project-technologies" aria-label="Technologies utilisées">
+          {technologies.map((technology) => <span key={technology}>{technology}</span>)}
+        </div>
+        <p>{project.description}</p>
+      </div>
       {project.link && (
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
-          Voir le projet
+        <a className="project-link" href={project.link} target="_blank" rel="noopener noreferrer">
+          <span>Voir le projet</span>
+          <span aria-hidden="true">→</span>
         </a>
       )}
-    </div>
+    </article>
   );
 }
 
